@@ -11,8 +11,8 @@ export class MailService {
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: 'samet.erkan.boz@gmail.com', // Your Gmail or Google Workspace account
-        pass: 'gkgn ekhm cpqo xmju', // Your generated app password
+        user: process.env.MAIL_ADDRESS, // Your Gmail or Google Workspace account
+        pass: process.env.MAIL_PASSWORD, // Your generated app password
       },
     });
   }
